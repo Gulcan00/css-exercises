@@ -6,7 +6,8 @@
 .container {
   text-align: center;
   display: grid;
-  grid-template: 1fr 1fr 5fr 1fr / 1fr 2fr;
+  grid-template: 1fr 1fr 6fr 1fr / 1fr 4fr;
+  gap: 4px;
 }
 
 .container div {
@@ -38,6 +39,10 @@
 
 .sidebar {
   background-color: #C50208;
+  grid-row: 2 / 4;
+  display: grid;
+  grid-template: repeat(4, 1fr) / 1fr;
+  gap: 50px;
 }
 
 .sidebar .photo {
@@ -58,6 +63,13 @@
 
 .nav {
   background-color: #C50208;
+}
+
+.nav ul {
+  display: grid;
+  grid-template: 1fr / repeat(3, 1fr);
+  align-items: center;
+  border: 1px solid;
 }
 
 .nav ul li {
